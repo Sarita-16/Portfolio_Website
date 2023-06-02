@@ -2,20 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background: rgb(1, 1, 36);
-    color: #ededed;
+:root {
+    --bg-color: rgb(1, 26, 22);
+    --second-bg-color: rgb(49, 140, 125);
+    --text-color: #ededed;
+    --main-color: rgb(110, 192, 178);
 }
 
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header Design */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 2rem 9%;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -24,33 +41,129 @@ body {
 }
 
 .logo {
-    font-size: 20px;
-    color: #ededed;
+    font-size: 2.5rem;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
 }
 
 .navbar a{
-    font-size: 18px;
-    color: #ededed;
+    font-size: 1.7rem;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    margin-left: 30px;
+    margin-left: 3.5rem;
     transition: .3s;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: #00abf0;
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+/* Home Section Design */
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
 
 .home {
-    height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
 }
 
-.home-contant {
-    background: green;
+.home-content {
+    max-width: 60rem;
 }
+
+.home-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content .text-animate {
+    position: relative;
+    width: 32.8rem;
+}
+
+.home-content .text-animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box .btn:hover {
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2):hover {
+    color: var(--bg-color);
+}
+
+.btn-box .btn:nth-child(2)::before {
+    background: var(--main-color);
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
