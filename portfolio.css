@@ -45,8 +45,11 @@ body {
     font-weight: 500;
     color: transparent;
     -webkit-text-stroke: .5px var(--text-color);
-    letter-spacing: 2px;
-    
+    letter-spacing: 2px; 
+}
+
+.logo:hover {
+    color: var(--main-color);
 }
 
 .navbar a{
@@ -80,6 +83,11 @@ section {
     display: flex;
     align-items: center;
     padding: 0 10%;
+}
+
+.home-blob {
+    width: 200px;
+    fill: var(--text-color);
 }
 
 .home-content {
@@ -169,3 +177,48 @@ section {
     width: 100%;
 }
 
+.home-sci {
+    position: absolute;
+    bottom: 4rem;
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .3rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 25px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: var(--bg-color);
+}
+
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
