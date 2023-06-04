@@ -1,2 +1,0 @@
-# CodeClause_Portfolio_Website
-Portfolio
