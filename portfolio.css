@@ -277,10 +277,14 @@ About Section Design
   text-align: center;
 }
 
+.heading span {
+    color: var(--main-color);
+}
+
 .about-img {
   position: relative;
-  width: 25rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -295,14 +299,111 @@ About Section Design
 
 .about-img .circle-spin {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0);
+  top: 60%;
+  left: 60%;
+  transform: translate(-60%, -60%) rotate(0);
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  border-top: .2rem solid var(--second-bg-color);
-  border-bottom: .2rem solid var(--second-bg-color);
-  border-left: .4rem solid var(--main-color);
-  border-right: .4rem solid var(--main-color);
+  border-radius: 40%;
+  border-top: .3rem solid var(--main-color);
+  border-bottom: .3rem solid var(--main-color);
+  border-left: .3rem solid var(--main-color);
+  border-right: .3rem solid var(--main-color);
 }
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.btn-box.btns {
+    display: inline-block;
+    width: 15rem;
+}
+
+.btn-box.btns a::before {
+    background: var(--second-bg-color);
+}
+
+
+/*------------------------------
+Education Section Design
+------------------------------*/
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.education .title{
+    
+    font-size: 3.2rem;
+    margin: 0 0 1.5rem 2rem;
+    color: transparent;
+    -webkit-text-stroke: .9px var(--main-color);
+    text-align: center;
+}
+
+.edu-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+.edu-box-container .box {
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid var(--main-color);
+    position: relative;
+    /*  width: 100%;    */
+}
+
+.edu-box-container .box i {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--second-bg-color);
+    background: var(--main-color);
+
+}
+
+.edu-box-container .box span {
+    font-size: 1.8rem;
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border-radius: 5rem; 
+    padding: 1rem 2rem;
+}
+
+.edu-box-container .box h3 {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+
+.edu-box-container .box p {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-top: 1.3rem;
+}
+
