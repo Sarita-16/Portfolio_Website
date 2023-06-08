@@ -36,12 +36,16 @@ Header Design
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
-    background: var(--header-footer-color);
+    padding: 2rem 9%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: .3s;
+}
+
+.header.sticky {
+    background: var(--header-footer-color);
 }
 
 .logo {
