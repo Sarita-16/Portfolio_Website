@@ -489,8 +489,68 @@ Projects Section Design
     padding: 100px 63px 60px; 
 }
 
+.container-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
 
- 
+.box-project h2 {
+    font-size: 2.5rem;
+    
+    font-family: 'Gambetta', serif;
+    letter-spacing: -1px;
+    transition: 700ms easy;
+    font-variation-settings: "wght" 311;
+    outline: none;
+    margin: 0 0 1.5rem rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.box-project h2:hover {
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 2px;
+    color: var(--text-color);
+}
+
+.box-project .project-img img {
+    height: 24rem;
+    width: 50rem;
+    border-radius: 2rem;
+    border: .2rem solid var(--main-color);
+}
+
+.project-imgHover {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.project-imgHover:hover {
+    background: var(--main-color);
+    opacity: .6;
+}
+
+.box-project h3 {
+    font-size: 2rem;
+    margin: 0 0 1.5rem rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+
 
 
 /*------------------------------
