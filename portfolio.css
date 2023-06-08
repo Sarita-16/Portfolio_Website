@@ -184,6 +184,10 @@ section {
     width: 100%;
 }
 
+.btn-box i {
+    padding-right: 1rem;
+}
+
 .home-img-profile {
   margin-left: auto;
   position: relative;
