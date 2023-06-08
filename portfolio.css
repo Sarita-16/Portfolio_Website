@@ -498,12 +498,11 @@ Projects Section Design
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8rem;
+    gap: 2rem;
 }
 
 .box-project h2 {
-    font-size: 2.5rem;
-    
+    font-size: 2.5rem; 
     font-family: 'Gambetta', serif;
     letter-spacing: -1px;
     transition: 700ms easy;
@@ -529,22 +528,19 @@ Projects Section Design
     border: .2rem solid var(--main-color);
 }
 
-.project-imgHover {
-    position: relative;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
+.box-project figure img {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
-.project-imgHover:hover {
-    background: var(--main-color);
-    opacity: .6;
+.box-project figure:hover img {
+    -webkit-filter: blur(0);
+    filter: blur(0);
 }
 
-.box-project h3 {
+.box-project a h3 {
     font-size: 2rem;
     margin: 0 0 1.5rem rem;
     padding-top: 1.5rem;
@@ -552,8 +548,6 @@ Projects Section Design
     color: var(--text-color);
     text-align: center;
 }
-
-
 
 
 
@@ -592,7 +586,6 @@ Contact Section Design
     flex-wrap: wrap;
 }
 
-/*--------------------------------------------------------------------------------------*/
 .contact form .input-box .input-field input,
 .contact form .textarea-field textarea {
     width: 100%;
@@ -609,37 +602,12 @@ Contact Section Design
 .contact form .textarea-field textarea::placeholder {
     color: var(--text-color);
 }
-/*--------------------------------------------------------------------------------------*/
-
 
 .contact form .input-box .input-field {
     position: relative;
     width: 49%;
     margin: .8rem 0; 
 }
-
-
-
-.contact form .focus {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--bg-color);
-    border-radius: .6rem;
-    z-index: -1;
-    transition: .5s;
-}
-
-.contact form .input-box .input-field input:focus~.focus,
-.contact form .input-box .input-field input:valid~.focus,
-.contact form .textarea-field textarea:focus~.focus,
-.contact form .textarea-field textarea:valid~.focus {
-    width: 100%;
-}
-
-
 
 .contact form .textarea-field {
     position: relative;
@@ -687,6 +655,17 @@ Footer Design
     font-size: 1.6rem;
     margin-left: 8rem;
     color: var(--text-color)
+}
+
+.footer-text a i {
+    font-size: 2rem;
+    color: var(--main-color);
+    padding-left: 2.5rem;
+    padding-right: 0.5rem;
+}
+
+.footer-text a i:hover {
+    transform: scale(1.15);
 }
 
 .footer-iconTop a {
