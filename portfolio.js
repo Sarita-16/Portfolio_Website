@@ -1,3 +1,5 @@
+//----------------------------------------------------
+
 // toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
@@ -46,7 +48,18 @@ window.onscroll = () => {
   menuIcon.classList.remove("bx-x");
   navbar.classList.remove("active");
 
-  // animation footer on scroll
+  /*-----------------Contact me submit button--------------------
+  let popup = document.getElementById("popup");
+
+  function openPopup() {
+    popup.classList.add("open-popup");
+  }
+
+  function closePopup() {
+    popup.classList.remove("open-popup");
+  }
+
+  ------------------------------------------------------------*/
 
   footer.classList.toggle(
     "show-animate",
