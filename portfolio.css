@@ -925,6 +925,41 @@ Footer Design
     }
 }
 
+@media (max-width: 370px) {
+    .home {
+        justify-content: center;
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+     }
+ 
+    .footer .footer-img {
+        position: relative;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        margin-right: -1rem;   
+    }
+ 
+    .footer .footer-text a {
+        text-align: center;
+        text-decoration: none;    
+    }
+}
+
+
+
 
 
 /* KEYFRAMES ANIMATION */
