@@ -941,6 +941,22 @@ Footer Design
     }
 }
 
+@media (max-width: 464px){
+    .footer {
+        flex-direction: column-reverse;
+     }
+ 
+     .footer .footer-img {
+         margin-bottom: -3rem;
+         margin-right: 38rem;
+         position: absolute;
+     }
+ 
+     .footer a {
+         text-align: center;
+     }
+}
+
 @media (max-width: 440px) {
     .home-content h1 {
         font-size: 5.2rem;
